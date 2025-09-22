@@ -48,8 +48,6 @@ public class DinnerConstructor {
     private String getRandomDish(ArrayList<String> availableDishes) {
         int numberOfDishesForType = availableDishes.size(); //получаем общее количество доступных блюд этого типа
         int dishIndex = random.nextInt(numberOfDishesForType); //генерируем случайное число от 0 до (кол-во блюд - 1), чтобы выбрать случайное блюдо
-        String selectedDish = availableDishes.get(dishIndex); //выберем произвольное блюдо по индексу
-        return selectedDish;
-
+        return availableDishes.get(dishIndex); //выберем произвольное блюдо по индексу
     }
 }
