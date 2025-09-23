@@ -25,6 +25,8 @@ public class Main {
                     break;
                 case "3":
                     return;
+                default:
+                    System.out.println("Неверная команда. Пожалуйста, введите 1, 2 или 3.");
             }
         }
     }
